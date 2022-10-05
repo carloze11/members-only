@@ -5,12 +5,12 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-const connectDB = require('./config/database')
+const connect2DB = require('./config/database')
 require('dotenv').config()
 
 
 // Database connection 
-connectDB();
+connect2DB();
 
 
 const indexRouter = require('./routes/index');
